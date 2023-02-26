@@ -1,0 +1,40 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    padding: 20px;
+    font-size: 16px;
+    color: #252b33;
+    font-family: 'poppins', sans-serif;
+}
+.copyright, .condition{
+    width:350px;
+    height: 60px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+
+.policy{
+    width:45%;
+    float: left;
+    cursor: pointer;
+   border-right: 1px solid lightgray;
+   transition: all .7s;
+}
+.disclaimer{
+    cursor: pointer;
+    float: right;
+    width: 50%;
+    transition: all .7s;
+}
+.policy:hover, .disclaimer:hover{
+    color:#ffc107;
+}
+
+@media screen and (max-width:767px) {
+    .flex{
+        flex-direction: column;
+    }
+}

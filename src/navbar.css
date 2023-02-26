@@ -1,0 +1,168 @@
+.container {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    color: #fafafae6;
+    display: flex;
+    background: #272727;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.image>img {
+    border-radius: 50%;
+    border: 10px solid #343a40;
+}
+
+.title {
+    font-size: 1.7rem;
+
+}
+
+nav ul {
+    padding: 10px;
+    margin: 0;
+
+    list-style: none;
+
+}
+
+nav ul li {
+    padding: 12px 50px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+
+}
+
+.social_media {
+    width: 100%;
+    padding: 5px;
+    /* min-height: 130px; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.bars {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    gap: 5px;
+    transition: .7s;
+}
+
+.bars .line {
+    width: 30px;
+    height: 3px;
+    transition: .7s;
+    background: white;
+}
+
+.active {
+    color: #ffc107;
+}
+
+
+
+/* NAVIGATION PART */
+.navigation {
+
+    background: #222;
+    display: none;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fafafae6;
+    padding: 5px;
+    width: 100%;
+}
+
+.navigation ul li {
+    border-bottom: 1px solid #343a40;
+    padding: 12px;
+}
+
+.open {
+    display: block;
+}
+
+
+/* MAIN PART */
+
+
+
+
+@media screen and (max-width:1000px) {
+    .app {
+        flex-direction: column;
+
+    }
+   
+    .container {
+        width: 100%;
+        flex-direction: row;
+        height: 60px;
+        width: 100%;
+        z-index: 1;
+        padding: 5px;
+    }
+    .social_media {
+        justify-content: flex-end;
+        gap: 15px;
+        min-height: 100%;
+        align-items: center;
+        margin-right: 30px;
+
+    }
+
+    .profile {
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .bars {
+        display: block;
+
+    }
+
+    .bars .line {
+        margin: 0px 0 5px 0;
+    }
+
+    .image,
+    nav {
+        display: none;
+    }
+
+}

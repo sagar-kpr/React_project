@@ -1,0 +1,57 @@
+.col-2{
+    width:50%;
+  
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+
+}
+.bg-light{
+    background: rgb(248, 249, 250);
+}
+
+.col-2__img{
+    width:70px;
+    height:70px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+    padding: 25px;
+}
+
+.col-2_data{
+    padding:0px 12px;
+}
+.col-2__content{
+    width: 100%;
+    height: auto;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+}
+
+
+@media screen and (max-width:767px) {
+    .col-2{
+        width: 100%;
+    }
+    .experience, .education{
+        width:100%;
+        float: none;
+    }
+}
+
+
+
+
+
+ 
+
+  
